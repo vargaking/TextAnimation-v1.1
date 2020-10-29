@@ -22,7 +22,7 @@ First you have to create an empty JS file and name it (I will use ```textslidesh
 ```
 Be sure to use the same name in the first line as the file name.
 To the array, called ```texts``` write the texts you want to see in the animation. Take care to the commas and the quotation marks.
-In the next line you will call a function which will do the animation. You have to following attributes:
+In the next line you will call a function which will do the animation. You have the following attributes:
 #### frameRate(int)
 This will set the frame per second rate (fps) to the animation. The recommended value is 60, but you can set any value which is at least 30 and not more than 240. 
 #### duration(int)
