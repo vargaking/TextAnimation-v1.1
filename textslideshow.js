@@ -78,7 +78,7 @@ function calcCordx2(calcCordx1Width, text1Width, textDisplayWidth, numOfFrames, 
   return returnValue;
 }
 
-export function textSlideshow(frameRate, duration, texts, latency, textColor, backgroundColor) {
+function textSlideshow(frameRate, duration, texts, latency, textColor, backgroundColor) {
   var currentText = 0;
   animateText(frameRate, duration, texts[currentText], latency, textColor, backgroundColor);
   currentText++;
