@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+.header-animation {
+  background-color: black;
+  margin-top: calc(100vh / 2 - 90px);
+}
+
+header h1 {
+  position: absolute;
+  font-size: 56px;
+  vertical-align: middle;
+  font-family: 'Fira Sans', sans-serif;
+  display: inline;
+}
+
+header h3 {
+  padding-top: 1rem;
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.left {
+  width: 1vw;
+  left: calc(100vw /2);
+}
+
+.right {
+  right: calc(100vw / 2);
+}
