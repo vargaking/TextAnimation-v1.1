@@ -37,4 +37,4 @@ The color of the texts. It should be a HEX color, like ```"#FF0000"```
 The background's color. You should set it as the same of the websites background.
 
 ## Contact
-If you find a bug or you have an idea how to improve this little project, please write me a message on instagram (username: @gdani___)
+If you find a bug or you have an idea how to improve this little project, please write me a message on instagram (username: [@gdani___](https://www.instagram.com/gdani___))
