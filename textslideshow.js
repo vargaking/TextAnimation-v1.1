@@ -1,4 +1,4 @@
-function animateText(frameRate, duration, text, latency, textColor, backgroundColor) {
+function animateText(frameRate, duration, text, waitTime, textColor, backgroundColor) {
   var textDisplay = text;
   var canvas = document.getElementById("animationCanvas");
   canvas.width = screen.width;
@@ -47,7 +47,7 @@ function animateText(frameRate, duration, text, latency, textColor, backgroundCo
           context.fillText(text2, calcCordx2(calcCordx1(lessTextWidth, displayTextWidth, numOfFrames, currentFrame), text1Width, displayTextWidth, numOfFrames, currentFrame), 60);
           currentFrame--;
         }, 1000 / frameRate);
-      }, latency * 1000);
+      }, waitTime * 1000);
       context.fillStyle = textColor;
       currentFrame++;
       clearInterval(refresh);
@@ -78,17 +78,17 @@ function calcCordx2(calcCordx1Width, text1Width, textDisplayWidth, numOfFrames, 
   return returnValue;
 }
 
-function textSlideshow(frameRate, duration, texts, latency, textColor, backgroundColor) {
+function textSlideshow(frameRate, duration, texts, waitTime, textColor, backgroundColor) {
   var currentText = 0;
-  animateText(frameRate, duration, texts[currentText], latency, textColor, backgroundColor);
+  animateText(frameRate, duration, texts[currentText], waitTime, textColor, backgroundColor);
   currentText++;
   setInterval(() => {
     if (currentText == texts.length) {
       currentText = 0;
     }
-    animateText(frameRate, duration, texts[currentText], latency, textColor, backgroundColor);
+    animateText(frameRate, duration, texts[currentText], waitTime, textColor, backgroundColor);
     currentText++;
-  }, (duration * 2 + latency * 2) * 1000);
+  }, (duration * 2 + waitTime * 2) * 1000);
 }
 
 
